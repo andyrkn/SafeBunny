@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="5.0.0" />
+
+    <PackageReference Include="SafeBunny.Core" Version="0.0.126062021-18-43" />
+    <PackageReference Include="SafeBunny.CosmosDbStore" Version="0.0.126062021-14-51" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SafeBunny.SignalR\SafeBunny.SignalR.csproj" />
+  </ItemGroup>
+</Project>

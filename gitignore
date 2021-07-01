@@ -1,0 +1,5 @@
+owid-covid-data.json
+**/bin
+**/obj
+**/.vs
+*/*.DotSettings.user

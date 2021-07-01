@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  safebunny.consumer.orders:
+    image: ${DOCKER_REGISTRY-}safebunnyconsumerorders
+    build:
+      context: .
+      dockerfile: SafeBunny.Consumer.Orders/Dockerfile
+
+  safebunny.consumer.invoicing:
+    image: ${DOCKER_REGISTRY-}safebunnyconsumerinvoicing
+    build:
+      context: .
+      dockerfile: SafeBunny.Consumer.Invoicing/Dockerfile
+
+
+  safebunny.consumer.delivery:
+    image: ${DOCKER_REGISTRY-}safebunnyconsumerdelivery
+    build:
+      context: .
+      dockerfile: SafeBunny.Consumer.Delivery/Dockerfile
+
+
+  safebunny.consumer.billing:
+    image: ${DOCKER_REGISTRY-}safebunnyconsumerbilling
+    build:
+      context: .
+      dockerfile: SafeBunny.Consumer.Billing/Dockerfile
+

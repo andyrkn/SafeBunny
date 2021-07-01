@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SafeBunny.Benchmarks": {
+      "commandName": "Project",
+      "commandLineArgs": "pipeline"
+    }
+  }
+}

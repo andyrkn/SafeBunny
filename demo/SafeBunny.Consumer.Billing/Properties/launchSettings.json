@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SafeBunny.Consumer.Billing": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

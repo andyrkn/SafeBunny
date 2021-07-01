@@ -1,0 +1,18 @@
+<div class="flex-column">
+    <div class="header">
+        <button mat-raised-button
+            color="primary"
+            (click)="trigger()">Trigger</button>
+        <button mat-raised-button
+            color="primary"
+            (click)="clean()">Clean</button>
+    </div>
+    <div class="flex-row row-top data-box">
+        <div *ngFor="let key of keys"
+            class="data-container">
+            <p>{{key}}</p>
+            <app-info-row *ngFor="let entry of data[key]"
+                [data]=entry></app-info-row>
+        </div>
+    </div>
+</div>
